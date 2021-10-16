@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+:root {
+  font-size: 18px;
+  --space1: 8px;
+  --space2: 16px;
+  --space3: 24px;
+  --space4: 32px;
+  --space5: 48px;
+  --space6: 64px;
+  --space7: 96px;
+  --space8: 128px;
+  --xsmallFont: 1rem;
+  --smallFont: 1.25rem;
+  --medFont: 1.5rem;
+  --largeFont: 2rem;
+  --primary: hsl(160deg, 100%, 30%);
+  --secondaryLighter: hsl(45deg, 100%, 50%);
+  --secondaryDarker: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --veryDark: hsl(0deg, 0%, 10%);
+  --dark: hsl(0deg, 0%, 30%);
+  --medium: hsl(0deg, 0%, 40%);
+  --light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+h2 {
+  margin-top: 0;
+}
+strong {
+  color: var(--primary);
+}
+/* Contains the top content - title + intro */
+header {
+  padding-top: var(--space7);
+  padding-bottom: var(--space6);
+  padding-left: var(--space4);
+  padding-right: var(--space3);
+  border-bottom: 10px solid var(--medium);
+}
+
+/* Contains the section containing the card */
+main {
+  background-color: var(--light);
+  padding-top: var(--space7);
+  padding-bottom: var(--space6);
+}
+
+/* Wraps the intro-chunk and card (x2, 1 div, 1 section) */
+.max-width-wrapper {
+  max-width: 1050px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* <div/> wrapping the title and intro paragraphs */
+.intro-chunk {
+  font-size: var(--medFont);
+  width: 62%;
+}
+
+/* h1 title */
+.title {
+  display: inline-block;
+  padding-top: var(--space2);
+  padding-bottom: var(--space2);
+  font-size: var(--largeFont);
+}
+
+/* <div/> containing the entire card */
+.card {
+  display: inline-block;
+  font-size: var(--smallFont);
+  background-color: var(--white);
+  padding-top: var(--space1);
+  padding-left: var(--space4);
+  padding-right: var(--space4);
+}
+
+/* h2 containing the heading for card */
+.indented-heading {
+  font-size: var(--medFont);
+  width: fit-content;
+  background-color: var(--secondaryLighter);
+  padding: var(--space3) var(--space5);
+  margin-left: calc(-1 * var(--space4));
+  border-bottom: 10px solid var(--secondaryDarker);
+}
+.card p {
+  padding-top: var(--space1);
+  padding-bottom: var(--space1);
+}
